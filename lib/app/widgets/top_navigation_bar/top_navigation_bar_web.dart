@@ -11,7 +11,7 @@ class TopNavigationBarWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     const navigationBarItemTextSize = 25.0;
     return BlocBuilder<TopNavigationBarBloc, TopNavigationBarState>(
       builder: (context, state) {

@@ -18,7 +18,7 @@ class MyLiquidityCardTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return FittedBox(
       child: SizedBox(
         width: 500,

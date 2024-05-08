@@ -11,7 +11,7 @@ class Account extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = 400.0;
     const edge = 40.0;
     if (_width < 405) wid = _width;

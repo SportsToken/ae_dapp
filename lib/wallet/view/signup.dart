@@ -18,8 +18,8 @@ class _SignUpViewState extends State<SignUpView> {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.sizeOf(context).width;
+    final height = MediaQuery.sizeOf(context).height;
     return BlocBuilder<WalletBloc, WalletState>(
       buildWhen: (previous, current) => previous != current,
       builder: (context, state) {

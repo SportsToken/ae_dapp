@@ -14,7 +14,7 @@ class AccountDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     var wid = 400.0;
     const edge2 = 60.0;
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     if (_width < 405) wid = _width;
 
     return LayoutBuilder(

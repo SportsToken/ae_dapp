@@ -29,7 +29,7 @@ class StatsSide extends StatelessWidget {
         shortCurrentBookValueRatio.isInfinite) {
       shortCurrentBookValueRatio = 0;
     }
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = _width * 0.4;
     if (_width < 1160) wid = _width * 0.95;
 

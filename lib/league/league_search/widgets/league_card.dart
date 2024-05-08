@@ -13,7 +13,7 @@ class LeagueCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var showToolTipIcon = true;
     var showDateRange = true;
     var textSize = 16.0;

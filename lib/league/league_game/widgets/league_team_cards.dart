@@ -30,7 +30,7 @@ class LeagueTeamCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     final walletAddress =
         context.select((WalletBloc bloc) => bloc.state.walletAddress);
     final athletes =

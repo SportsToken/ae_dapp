@@ -40,7 +40,7 @@ class _BuyPredictionDialogState extends State<BuyPredictionDialog> {
     var isWeb = true;
     isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     final wid = isWeb ? 400.0 : 355.0;
     var hgt = 500.0;
     if (_height < 505) hgt = _height;

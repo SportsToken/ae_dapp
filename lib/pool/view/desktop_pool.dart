@@ -41,8 +41,8 @@ class _DesktopPoolState extends State<DesktopPool> {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
     var layoutHeight = _height * 0.85;

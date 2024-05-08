@@ -15,7 +15,7 @@ class AccountAssetCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return SizedBox(
       height: 40,
       child: OutlinedButton(

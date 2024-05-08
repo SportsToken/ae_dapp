@@ -15,7 +15,7 @@ class AccountWithdrawView extends StatelessWidget {
     const wid = 400.0;
     const edge2 = 60.0;
     const spacing = 25.0;
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         return Column(

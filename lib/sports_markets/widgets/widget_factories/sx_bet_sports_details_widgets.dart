@@ -15,7 +15,7 @@ class SXBetSportsDetailsWidget implements SportsDetailsWidget {
 
   @override
   Widget sportsDetailsCardsForMobile(bool showIcon, double athNameBx) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return Row(
       children: [
         SizedBox(
@@ -58,7 +58,7 @@ class SXBetSportsDetailsWidget implements SportsDetailsWidget {
 
   @override
   Widget sportsDetailsCardsForWeb(bool team, double _width) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,8 +102,8 @@ class SXBetSportsDetailsWidget implements SportsDetailsWidget {
 
   @override
   Widget sportsPageDetails() {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
 
     return LayoutBuilder(
       builder: (context, constraints) => SafeArea(
@@ -186,7 +186,7 @@ class SXBetSportsDetailsWidget implements SportsDetailsWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width * 0.75,
+                        width: MediaQuery.sizeOf(context).width * 0.75,
                         decoration: boxDecoration(
                           const Color.fromRGBO(
                             254,

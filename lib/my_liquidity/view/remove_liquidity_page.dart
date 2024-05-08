@@ -38,8 +38,8 @@ class _RemoveLiquidityPageState extends State<RemoveLiquidityPage> {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     final tokenOneRemoveAmount =
         double.parse(infoOfSelectedCard.token0LpAmount) * (value / 100);
     final tokenTwoRemoveAmount =

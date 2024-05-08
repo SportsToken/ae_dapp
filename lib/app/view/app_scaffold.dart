@@ -31,7 +31,7 @@ class AppScaffold extends StatelessWidget {
           ? const BottomNavigationBarWeb()
           : const BottomNavigationBarMobile(),
       body: Container(
-        height: MediaQuery.of(context).size.height,
+        height: MediaQuery.sizeOf(context).height,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/blurredBackground.png'),

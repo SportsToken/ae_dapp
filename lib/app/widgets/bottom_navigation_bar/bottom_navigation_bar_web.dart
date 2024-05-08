@@ -9,7 +9,7 @@ class BottomNavigationBarWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.1,
+      height: MediaQuery.sizeOf(context).height * 0.1,
       color: Colors.transparent,
       padding: const EdgeInsets.only(left: 40, right: 40),
       child: Row(

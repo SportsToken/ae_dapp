@@ -7,7 +7,7 @@ class TermsAndConditions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var buttonText = '';
     _width >= 768 ? buttonText = 'Start Trading' : buttonText = 'Start';
     const textSize = 14.0;

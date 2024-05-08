@@ -7,8 +7,8 @@ class WrongNetworkDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = 450.0;
     var hgt = 200.0;
     const edge = 75.0;

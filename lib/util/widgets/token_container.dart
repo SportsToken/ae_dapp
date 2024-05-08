@@ -23,8 +23,8 @@ class _TokenContainerWidgetState extends State<TokenContainerWidget> {
   Widget build(BuildContext context) {
     final currentTokens =
         context.select((WalletBloc bloc) => bloc.state.tokens);
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     final isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
     final wid = isWeb ? 550.0 : _width;

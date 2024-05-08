@@ -9,7 +9,7 @@ class TopNavigationBarMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width,
+      width: MediaQuery.sizeOf(context).width,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

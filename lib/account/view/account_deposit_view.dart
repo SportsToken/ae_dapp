@@ -14,7 +14,7 @@ class AccountDepositView extends StatelessWidget {
     const edge = 40.0;
     const wid = 400.0;
     const edge2 = 60.0;
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     var formattedWalletAddress = '';
 
     final walletAddress =

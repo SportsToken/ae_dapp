@@ -48,7 +48,7 @@ class _RedeemDialogState extends State<RedeemDialog> {
   Widget build(BuildContext context) {
     final isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     final wid = isWeb ? 400.0 : 355.0;
     if (_height < 505) hgt = _height;
     final usdValue = context.read<WalletBloc>().state.axData.price;

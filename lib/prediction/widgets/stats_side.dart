@@ -20,7 +20,7 @@ class StatsSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     final _isPortraitMode =
         MediaQuery.of(context).orientation == Orientation.portrait;
     var wid = _width * 0.4;

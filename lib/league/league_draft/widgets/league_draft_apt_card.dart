@@ -18,7 +18,7 @@ class APTCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var sportIconSize = 30.0;
     var statusIconSize = 30.0;
     var textSize = 16.0;

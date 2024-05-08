@@ -12,8 +12,8 @@ class ConnectedWalletPromoDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = 500.0;
     const edge = 20.0;
     if (_width < 505) wid = _width;

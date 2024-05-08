@@ -5,7 +5,7 @@ class LeagueTeamHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var textSize = 16.0;
     var titleName = 'User Team / User Wallet Address';
     if (_width <= 768) {

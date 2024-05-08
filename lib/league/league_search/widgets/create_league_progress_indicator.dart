@@ -7,7 +7,7 @@ class CreateLeagueProgressIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     final textSize = _width <= 768 ? 12.0 : 16.0;
     return Container(
       decoration: boxDecoration(

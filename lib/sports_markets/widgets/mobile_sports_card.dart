@@ -22,7 +22,7 @@ class MobileSportsCard extends StatelessWidget {
             onPressed: () {
               context.goNamed(
                 'sports-markets',
-                params: {
+                pathParameters: {
                   'name': sportsMarketsModel.name,
                 },
               );

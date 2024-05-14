@@ -20,7 +20,7 @@ class DesktopSportsCard extends StatelessWidget {
         onPressed: () {
           context.goNamed(
             'sports-markets',
-            params: {'name': sportsMarketsModel.name},
+            pathParameters: {'name': sportsMarketsModel.name},
           );
         },
         child: Row(

@@ -27,7 +27,7 @@ class MobileAthleteCard extends StatelessWidget {
             onPressed: () {
               context.goNamed(
                 'athlete',
-                params: {'id': athlete.id.toString() + athlete.name},
+                pathParameters: {'id': athlete.id.toString() + athlete.name},
               );
             },
             child: Row(

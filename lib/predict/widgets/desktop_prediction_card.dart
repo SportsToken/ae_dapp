@@ -24,7 +24,7 @@ class DesktopPredictionCard extends StatelessWidget {
         onPressed: () {
           context.goNamed(
             'prediction',
-            params: {
+            pathParameters: {
               'id': predictionModel.id.toString() + predictionModel.prompt,
             },
           );

@@ -34,7 +34,7 @@ class LeagueCard extends StatelessWidget {
         onPressed: () {
           context.goNamed(
             'league-game',
-            params: {'leagueID': leaguePair.first.leagueID},
+            pathParameters: {'leagueID': leaguePair.first.leagueID},
           );
         },
         child: Row(

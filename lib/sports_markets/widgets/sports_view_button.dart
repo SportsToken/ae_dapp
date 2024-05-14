@@ -26,7 +26,7 @@ class ViewButton extends StatelessWidget {
             );
         context.goNamed(
           'sports-markets',
-          params: {'name': sports.name},
+          pathParameters: {'name': sports.name},
         );
       },
       child: SizedBox(

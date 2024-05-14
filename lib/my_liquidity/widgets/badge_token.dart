@@ -15,8 +15,11 @@ class BadgeToken extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Badge(
-      shape: BadgeShape.square,
-      borderRadius: BorderRadius.circular(8),
+      badgeStyle: BadgeStyle(
+        shape: BadgeShape.square,
+        borderRadius: BorderRadius.circular(8),
+        padding: const EdgeInsets.only(top: 2, bottom: 2, left: 5, right: 5),
+      ),
       badgeContent: Text(
         sport.name.toUpperCase(),
         style: const TextStyle(
@@ -27,7 +30,6 @@ class BadgeToken extends StatelessWidget {
         ),
       ),
       position: BadgePosition.topEnd(top: -14, end: -14),
-      padding: const EdgeInsets.only(top: 2, bottom: 2, left: 5, right: 5),
       child: Text(
         symbol,
         style: const TextStyle(

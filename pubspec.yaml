@@ -41,6 +41,7 @@ dependencies:
   flutter_bloc: ^8.0.1
   flutter_device_type: ^0.4.0
   flutter_launcher_icons: ^0.11.0
+  flutter_widget_from_html: ^0.6.0-rc.2021031201
   font_awesome_flutter: ^10.1.0
   get: ^4.6.5
   go_router: ^6.0.1

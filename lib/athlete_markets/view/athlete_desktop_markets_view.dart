@@ -8,7 +8,7 @@ class AthleteDesktopMarketsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     final athletes = context.read<MarketsPageBloc>().state.athletes;
     return SizedBox(
       height: _height * 0.8,

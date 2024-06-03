@@ -5,7 +5,7 @@ class CryptoDesktopMarketsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     return SizedBox(
       height: _height * 0.8,
       child: ListView.builder(

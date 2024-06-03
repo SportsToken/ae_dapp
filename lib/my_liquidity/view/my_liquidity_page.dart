@@ -46,8 +46,8 @@ class _MyLiquidityPageState extends State<MyLiquidityPage>
   @override
   Widget build(BuildContext context) {
     final poolRepository = context.read<PoolRepository>();
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     _layoutHgt = _height * 0.8;
     _isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
@@ -276,7 +276,7 @@ class _MyLiquidityPageState extends State<MyLiquidityPage>
                                 );
                               },
                             ),
-                          )
+                          ),
                       ],
                     ),
                   ),

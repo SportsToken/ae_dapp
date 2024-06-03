@@ -27,7 +27,7 @@ class ScoutBuyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.20,
+      width: MediaQuery.sizeOf(context).width * 0.20,
       height: 36,
       decoration: boxDecoration(
         const Color.fromRGBO(

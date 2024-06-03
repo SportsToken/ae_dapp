@@ -9,8 +9,8 @@ class UnownedAPTs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = 400.0;
     if (_width < 405) wid = _width;
     var hgt = 500.0;

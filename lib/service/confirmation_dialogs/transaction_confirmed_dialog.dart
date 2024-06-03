@@ -92,8 +92,8 @@ class TransactionConfirmed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final chain = context.select((WalletBloc bloc) => bloc.state.chain);
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     var wid = 500.0;
     const edge = 40.0;
     if (_width < 505) wid = _width;

@@ -15,7 +15,7 @@ class AccountAssetCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return SizedBox(
       height: 40,
       child: OutlinedButton(
@@ -24,6 +24,13 @@ class AccountAssetCard extends StatelessWidget {
               .read<AccountBloc>()
               .add(AccountTokenViewRequested(token: token));
         },
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(0),
+            ),
+          ),
+        ),
         child: Row(
           children: <Widget>[
             Container(

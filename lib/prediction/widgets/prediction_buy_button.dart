@@ -25,7 +25,7 @@ class PredictionBuyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.20,
+      width: MediaQuery.sizeOf(context).width * 0.20,
       height: 36,
       decoration: boxDecoration(
         const Color.fromRGBO(
@@ -70,7 +70,6 @@ class PredictionBuyButton extends StatelessWidget {
                 swapRepository: context.read<SwapRepository>(),
                 // TODO: Setup some catch for the AthleteID
                 athleteId: 0,
-                predictionId: predictionModel.id,
               ),
               child: BuyPredictionDialog(
                 predictionModel: predictionModel,

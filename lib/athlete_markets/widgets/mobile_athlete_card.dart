@@ -17,7 +17,7 @@ class MobileAthleteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
 
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
@@ -27,7 +27,7 @@ class MobileAthleteCard extends StatelessWidget {
             onPressed: () {
               context.goNamed(
                 'athlete',
-                params: {'id': athlete.id.toString() + athlete.name},
+                pathParameters: {'id': athlete.id.toString() + athlete.name},
               );
             },
             child: Row(

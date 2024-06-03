@@ -39,7 +39,7 @@ class SingleLogoFarmTitle extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: MediaQuery.of(context).size.width * 0.01),
+                SizedBox(width: MediaQuery.sizeOf(context).width * 0.01),
                 Expanded(
                   child: farm.athlete == null
                       ? SportToken(

@@ -29,7 +29,7 @@ class MintPredictionButton extends StatelessWidget {
   final PredictionModel prompt;
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return Container(
       width: _width < 768 ? 100 : 200,
       height: 50,
@@ -82,7 +82,7 @@ class RedeemPredictionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     return Container(
       width: _width < 768 ? 100 : 200,
       height: 50,
@@ -167,7 +167,6 @@ class BuyEventButton extends StatelessWidget {
                   swapRepository: context.read<SwapRepository>(),
                   // TODO: Setup some catch for the AthleteID
                   athleteId: 0,
-                  predictionId: predictionModel.id,
                 ),
                 child: BuyPredictionDialog(
                   predictionModel: predictionModel,

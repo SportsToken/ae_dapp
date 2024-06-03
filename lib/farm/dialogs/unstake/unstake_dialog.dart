@@ -37,7 +37,7 @@ class _UnStakeDialogState extends State<UnStakeDialog> {
   Widget build(BuildContext context) {
     final isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     final wid = isWeb ? 390.0 : widget.layoutWdt;
     final hgt = _height < 455.0 ? _height : 450.0;
     const dialogHorPadding = 30.0;
@@ -92,7 +92,7 @@ class _UnStakeDialogState extends State<UnStakeDialog> {
                         size: 30,
                         color: Colors.white,
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
@@ -254,7 +254,7 @@ class _UnStakeDialogState extends State<UnStakeDialog> {
                           isUline: false,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
@@ -314,7 +314,7 @@ class _UnStakeDialogState extends State<UnStakeDialog> {
                       const WarningTextButton(
                         warningTitle: 'Insufficient Balance',
                       ),
-                    ]
+                    ],
                   ],
                 ),
               ],

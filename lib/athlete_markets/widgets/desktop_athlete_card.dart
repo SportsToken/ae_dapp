@@ -19,7 +19,7 @@ class DesktopAthleteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
 
     return SizedBox(
       height: 70,
@@ -33,7 +33,7 @@ class DesktopAthleteCard extends StatelessWidget {
               );
           context.goNamed(
             'athlete',
-            params: {'id': athlete.id.toString() + athlete.name},
+            pathParameters: {'id': athlete.id.toString() + athlete.name},
           );
         },
         child: Row(

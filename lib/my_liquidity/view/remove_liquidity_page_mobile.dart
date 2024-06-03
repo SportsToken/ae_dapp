@@ -48,8 +48,8 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     const metricsTextSize = 20.0;
     var containerLayoutHeight = _height * 0.65;
     if (_width >= 600 && _width <= 1024) containerLayoutHeight = _height * 0.5;
@@ -220,7 +220,7 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                               isBold: false,
                               isUline: false,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -248,7 +248,7 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                               isBold: false,
                               isUline: false,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -276,11 +276,11 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                               isBold: false,
                               isUline: false,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -364,7 +364,7 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                                 ),
                               ],
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -422,10 +422,10 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                                 ),
                               ],
                             ),
-                          )
+                          ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -487,7 +487,7 @@ class _RemoveLiquidityPageMobileState extends State<RemoveLiquidityPageMobile> {
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

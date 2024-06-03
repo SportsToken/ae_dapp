@@ -117,7 +117,7 @@ class _DesktopTradeState extends State<DesktopTrade> {
             int tknNum,
             BuildContext builderContext,
           ) {
-            final _width = MediaQuery.of(context).size.width;
+            final _width = MediaQuery.sizeOf(context).width;
             return SizedBox(
               height: 50,
               child: ElevatedButton(
@@ -222,8 +222,8 @@ class _DesktopTradeState extends State<DesktopTrade> {
           }
 
           Widget createTokenButton(int tknNum) {
-            final _height = MediaQuery.of(context).size.height;
-            final _width = MediaQuery.of(context).size.width;
+            final _height = MediaQuery.sizeOf(context).height;
+            final _width = MediaQuery.sizeOf(context).width;
             final textSize = _height * 0.05;
             var tkrTextSize = textSize * 0.25;
             if (!isWeb) tkrTextSize = textSize * 0.35;

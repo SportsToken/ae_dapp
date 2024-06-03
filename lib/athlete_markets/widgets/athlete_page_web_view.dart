@@ -15,8 +15,8 @@ class AthletePageWebView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
     double _containerWdt, _containerHgt;
     // normal mode (dual)
     if (_width > 1160 && _height > 660) {
@@ -76,11 +76,11 @@ class AthletePageWebView extends StatelessWidget {
                     child: StatsSide(
                       athlete: athlete,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

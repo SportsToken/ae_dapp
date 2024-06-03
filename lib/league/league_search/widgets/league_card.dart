@@ -13,7 +13,7 @@ class LeagueCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
     var showToolTipIcon = true;
     var showDateRange = true;
     var textSize = 16.0;
@@ -34,7 +34,7 @@ class LeagueCard extends StatelessWidget {
         onPressed: () {
           context.goNamed(
             'league-game',
-            params: {'leagueID': leaguePair.first.leagueID},
+            pathParameters: {'leagueID': leaguePair.first.leagueID},
           );
         },
         child: Row(

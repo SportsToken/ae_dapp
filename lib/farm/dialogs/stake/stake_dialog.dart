@@ -37,7 +37,7 @@ class _StakeDialogState extends State<StakeDialog> {
   Widget build(BuildContext context) {
     final isWeb =
         kIsWeb && (MediaQuery.of(context).orientation == Orientation.landscape);
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     final wid = isWeb ? 390.0 : widget.layoutWdt;
     final hgt = _height < 455.0 ? _height : 450.0;
     const dialogHorPadding = 30.0;
@@ -93,7 +93,7 @@ class _StakeDialogState extends State<StakeDialog> {
                         size: 30,
                         color: Colors.white,
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
@@ -279,7 +279,7 @@ class _StakeDialogState extends State<StakeDialog> {
                           isUline: false,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
@@ -334,12 +334,12 @@ class _StakeDialogState extends State<StakeDialog> {
                             .read<WalletBloc>()
                             .state
                             .formattedWalletAddress,
-                      )
+                      ),
                     ] else ...[
                       const WarningTextButton(
                         warningTitle: 'Insufficient Balance',
-                      )
-                    ]
+                      ),
+                    ],
                   ],
                 ),
               ],

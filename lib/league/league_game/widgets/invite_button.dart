@@ -36,7 +36,7 @@ class Invite extends StatelessWidget {
             }
           : () {
               final gamePageLocation =
-                  GoRouter.of(context).location.substring(1);
+                  GoRouterState.of(context).uri.toString().substring(1);
               final gamePageUrl = '$baseUrl$gamePageLocation';
               Clipboard.setData(
                 ClipboardData(

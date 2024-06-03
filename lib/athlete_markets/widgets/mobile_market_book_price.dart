@@ -17,7 +17,7 @@ class MobileMarketBookPrice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
+    final _width = MediaQuery.sizeOf(context).width;
 
     return IndexedStack(
       index: marketVsBookPriceIndex,
@@ -49,7 +49,7 @@ class MobileMarketBookPrice extends StatelessWidget {
                     isBold: false,
                     isUline: false,
                   ),
-                )
+                ),
               ],
             ),
             if (_width > 355) ...[
@@ -86,10 +86,10 @@ class MobileMarketBookPrice extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 26,
-                  )
+                  ),
                 ],
               ),
-            ]
+            ],
           ],
         ),
         // Book
@@ -119,7 +119,7 @@ class MobileMarketBookPrice extends StatelessWidget {
                     isBold: false,
                     isUline: false,
                   ),
-                )
+                ),
               ],
             ),
             if (_width > 355) ...[
@@ -156,10 +156,10 @@ class MobileMarketBookPrice extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 26,
-                  )
+                  ),
                 ],
               ),
-            ]
+            ],
           ],
         ),
       ],

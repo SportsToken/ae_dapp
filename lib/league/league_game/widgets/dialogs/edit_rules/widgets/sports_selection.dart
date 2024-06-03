@@ -20,8 +20,8 @@ class _SportSelectionState extends State<SportSelection> {
   late SupportedSport dropDownValue;
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
     final league = context.read<EditRulesBloc>().state.league;
     dropDownValue = league.sports.first;
     selectedSports = league.sports;

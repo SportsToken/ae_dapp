@@ -12,7 +12,7 @@ class SportsPageWebView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
+    final _height = MediaQuery.sizeOf(context).height;
     double _containerHgt;
 
     _containerHgt = (_height * 0.90) - AppBar().preferredSize.height;

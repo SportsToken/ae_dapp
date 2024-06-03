@@ -9,7 +9,6 @@ import 'package:ax_dapp/util/util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:tokens_repository/tokens_repository.dart';
 
 class GraphSide extends StatelessWidget {
   const GraphSide({
@@ -27,8 +26,8 @@ class GraphSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
     var wid = _width * 0.4;
     if (_width < 1160) wid = containerWidth;
     final _zoomPanBehavior = ZoomPanBehavior(

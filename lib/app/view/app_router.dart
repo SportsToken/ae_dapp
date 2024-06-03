@@ -88,7 +88,7 @@ class AppRouter {
                 path: 'prediction/:id',
                 builder: (BuildContext context, GoRouterState state) {
                   return PredictionPage(
-                    predictionModel: _toPrediction(state.params['id']!)!,
+                    predictionModel: _toPrediction(state.pathParameters['id']!)!,
                   );
                 },
               ),
@@ -126,7 +126,7 @@ class AppRouter {
                 path: 'athlete/:id',
                 builder: (BuildContext context, GoRouterState state) {
                   return AthletePage(
-                    athlete: _findAthleteById(state.params['id']!),
+                    athlete: _findAthleteById(state.pathParameters['id']!),
                   );
                 },
               ),
@@ -135,7 +135,7 @@ class AppRouter {
                 path: 'sport/:name',
                 builder: (BuildContext context, GoRouterState state) {
                   return SportsPage(
-                    sport: _goToSportsMarketByName(state.params['name']!),
+                    sport: _goToSportsMarketByName(state.pathParameters['name']!),
                   );
                 },
               ),
@@ -209,7 +209,7 @@ class AppRouter {
                 name: 'league-game',
                 path: 'league-game/:leagueID',
                 builder: (BuildContext context, GoRouterState state) {
-                  final leagueID = state.params['leagueID']!;
+                  final leagueID = state.pathParameters['leagueID']!;
                   final leaguesWithTeams =
                       context.watch<LeagueBloc>().state.leaguesWithTeams;
                   if (leaguesWithTeams.isEmpty) return const Loader();
@@ -250,7 +250,7 @@ class AppRouter {
     ],
     redirect: (context, state) async {
       // These fix redirects a page back to the markest list if a user refreshes
-      if (state.location.contains('/athlete') && Global().athleteList.isEmpty) {
+      if (state.uri.toString().contains('/athlete') && Global().athleteList.isEmpty) {
         return '/scout';
       }
       // if (state.location.contains('/prediction') &&

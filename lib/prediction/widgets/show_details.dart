@@ -11,8 +11,8 @@ class ShowDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
     var wid = _width * 0.4;
     if (_width < 1160) wid = _width * 0.95;
 
@@ -38,7 +38,7 @@ class ShowDetails extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );

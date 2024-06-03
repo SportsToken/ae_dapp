@@ -54,8 +54,8 @@ class _LeagueDialog extends State<LeagueDialog> {
     final walletId = (walletAddress.isEmpty || walletAddress == kEmptyAddress)
         ? ''
         : walletAddress;
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.sizeOf(context).width;
+    final _height = MediaQuery.sizeOf(context).height;
 
     var textSize = 16.0;
     if (_width <= 768) textSize = 12.0;

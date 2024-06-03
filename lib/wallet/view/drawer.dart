@@ -10,8 +10,8 @@ class DrawerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.sizeOf(context).width;
+    final height = MediaQuery.sizeOf(context).height;
     return Drawer(
       width: width < 769 ? width : width / 3,
       backgroundColor: Colors.black,

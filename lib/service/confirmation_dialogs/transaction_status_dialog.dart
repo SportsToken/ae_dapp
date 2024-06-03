@@ -17,8 +17,8 @@ class TransactionStatusDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.sizeOf(context).height;
+    final _width = MediaQuery.sizeOf(context).width;
     final chain = context.select((WalletBloc bloc) => bloc.state.chain);
     var wid = 500.0;
     const edge = 40.0;
@@ -65,7 +65,7 @@ class TransactionStatusDialog extends StatelessWidget {
                           ),
                           onPressed: () => Navigator.pop(context),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

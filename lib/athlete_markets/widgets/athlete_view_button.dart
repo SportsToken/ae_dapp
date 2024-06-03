@@ -26,7 +26,7 @@ class AthleteViewButton extends StatelessWidget {
             );
         context.goNamed(
           'athlete',
-          params: {'id': athlete.id.toString() + athlete.name},
+          pathParameters: {'id': athlete.id.toString() + athlete.name},
         );
       },
       child: SizedBox(
@@ -47,7 +47,7 @@ class AthleteViewButton extends StatelessWidget {
               Icons.arrow_right,
               size: 25,
               color: Colors.white,
-            )
+            ),
           ],
         ),
       ),

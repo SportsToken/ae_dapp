@@ -7,7 +7,6 @@ extension ToastX on BuildContext {
         icon: Icons.warning,
         primaryColor: Colors.black.withOpacity(0.3),
         secondaryColor: Colors.amber[400],
-        backgroundType: BackgroundType.solid,
         title: Text(
           'Wallet Warning',
           style: TextStyle(
@@ -33,7 +32,6 @@ extension ToastX on BuildContext {
         icon: Icons.warning,
         primaryColor: Colors.black.withOpacity(0.3),
         secondaryColor: Colors.amber[400],
-        backgroundType: BackgroundType.solid,
         title: Text(
           title,
           style: TextStyle(

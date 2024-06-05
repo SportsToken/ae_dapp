@@ -1,7 +1,7 @@
 {
   "sites": [
     {
-      "slug": "athletex-exchange",
+      "slug": "axdapp",
       "distDir": "build/web"
     }
   ]

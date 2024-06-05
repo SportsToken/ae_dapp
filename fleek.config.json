@@ -1,7 +1,7 @@
 {
   "sites": [
     {
-      "slug": "axdapp",
+      "slug": "ax-dapp-staging",
       "distDir": "build/web"
     }
   ]

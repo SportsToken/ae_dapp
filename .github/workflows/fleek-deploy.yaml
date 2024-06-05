@@ -17,5 +17,9 @@ jobs:
           node-version: 16
       - name: Install Fleek CLI
         run: npm i -g @fleekxyz/cli
+      - name: Resolve Dependencies
+        run: flutter pub get
+      - name: Build Flutter site
+        run: flutter build web
       - name: Build & deploy sites
         run: fleek sites deploy
